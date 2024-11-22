@@ -1,0 +1,26 @@
+name: Execute Server-Side Script on Remote Server
+
+on:
+  push:
+    branches:
+      - main  # Trigger on push to the main branch
+  workflow_dispatch:  # Allow manual triggering of the workflow
+
+jobs:
+  execute-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Execute Script on Server
+      uses: appleboy/ssh-action@v0.1.8
+      with:
+        host: ${{ secrets.SSH_HOST }}  # Add your server's IP/hostname in GitHub Secrets
+        username: ${{ secrets.SSH_USER }}  # Add your SSH username in GitHub Secrets
+        password: ${{ secrets.SSH_PASSWORD }}  # Add your SSH password in GitHub Secrets (if using password auth)
+        port: ${{ secrets.SSH_PORT }}  # Add your SSH port in GitHub Secrets (default is 22)
+        script: |
+          cd /path/to/your/project  # Replace with your project directory on the server
+          node your-script.js       # Replace with the command to execute your script
