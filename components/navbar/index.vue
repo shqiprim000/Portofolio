@@ -17,7 +17,7 @@
       <li class="text-xl"  @click="$emit('scrollToSection','resume')">
         <icons-computer />
       </li>
-      <li class="text-xl">
+      <li class="text-xl" @click="$emit('scrollToSection','contact')">
         <icons-plain />
       </li>
     </ul>
