@@ -17,10 +17,11 @@ jobs:
     - name: Execute Script on Server
       uses: appleboy/ssh-action@v0.1.8
       with:
-        host: ${{ secrets.SSH_HOST }}  # Add your server's IP/hostname in GitHub Secrets
-        username: ${{ secrets.SSH_USER }}  # Add your SSH username in GitHub Secrets
-        password: ${{ secrets.SSH_PASSWORD }}  # Add your SSH password in GitHub Secrets (if using password auth)
-        port: ${{ secrets.SSH_PORT }}  # Add your SSH port in GitHub Secrets (default is 22)
+        host: 165.227.155.135 
+        username: root   
+        password:  password
+        port:  22
         script: |
-          cd /path/to/your/project  # Replace with your project directory on the server
-          node your-script.js       # Replace with the command to execute your script
+          cd /var/www/html/portofolio  # Replace with your project directory on the server
+             npm install               # Install dependencies (if needed)
+          npm run start         # Replace with the command to execute your script
