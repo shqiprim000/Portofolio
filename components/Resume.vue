@@ -56,11 +56,50 @@
             </div>
         </div>    
       </div>
-    </div>
+      <div class="skills__container">
+        <div class="cards">
+            <div class="card">
+              <h2 class="card-title">Soft Skillls </h2>
+              <div class="card-text">
+                <ul class="skills">
+                  <li><strong>Communication:</strong> Clear and effective in verbal and written forms.</li>
+                  <li><strong>Time Management:</strong> Prioritizes tasks to meet deadlines efficiently.</li>
+                  <li><strong>Creative Thinking:</strong> Offers innovative solutions to problems.</li>
+                  <li><strong>Collaboration:</strong> Cooperates effectively with diverse teams.</li>
+                  <li><strong>Leadership:</strong> Motivates and guides teams to success.</li>
+                  <li><strong>Adaptability:</strong> Thrives in dynamic environments and challenges.</li>
+                  <li><strong>Critical Thinking:</strong> Makes logical and informed decisions.</li>
+                </ul>
+              </div>
+              
+              
+              </div>
+              <div class="card">
+                <h2 class="card-title">Profetional Skills </h2>
+                <div class="card-text">
+                  <ul class="skills">
+                    <li><strong>Web Development:</strong> HTML, CSS, SCSS, JavaScript, PHP,Tailwind CSS.</li>
+                    <li><strong>Frameworks:</strong> Nuxt.js,Vue.js, Laravel.</li>
+                    <li><strong>Styling:</strong> Responsive designs with modern frameworks.</li>
+                    <li><strong>Backend:</strong> API development and server-side logic.</li>
+                    <li><strong>Optimization:</strong> Performance-focused coding.</li>
+                    <li><strong>Version Control:</strong> Proficient with Git.</li>
+                    <li><strong>Problem Solving:</strong> Debugging and efficient issue resolution.</li>
+                  </ul>
+                </div>
+                
+                </div>
+        </div>  
+        
+        </div>
+      </diV>
   </div>
 </template>
 
 <style lang="scss">
+
+@import '../assets/defaultValue.scss';
+
 .resume__title-container {
   padding: 16px;
   border-radius: 10px;
@@ -98,7 +137,7 @@
       gap: 8px;
 
       .attendance__years {
-        background-color: #fbbf24;
+        background-color: $yellow-color;
         padding: 4px 8px;
         border-radius: 4px;
         width: 130px;
@@ -118,10 +157,37 @@
       }
     }
   }
-
-
 .headline {
   font-size: 24px;
   font-weight: bold;
+}
+
+.skills__container{
+
+  margin-top: 24px;
+.skills{
+
+  li {
+    margin-top: 8px;
+    border-radius: 10px;
+    padding: 8px;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in, box-shadow 0.3s ease-in;   
+    strong {
+      color: $yellow-color; 
+      transition: color 0.3s ease-in;
+    }
+  
+    &:hover {
+      background-color: $yellow-color;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+  
+      strong {
+        color: white; 
+            }
+    }
+  }
+}
 }
 </style>

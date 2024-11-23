@@ -40,6 +40,8 @@
 
 <style scoped lang="scss">
 
+@import '../assets/defaultValue.scss';
+
 .about_me_header {
   padding: 34px;
   text-align: center;
@@ -69,8 +71,8 @@
 
     span {
       font-weight: bold;
-      color: black;
-      background-color: #fbbf24;
+      color: $SoftBlue;
+      background-color: $WarmBeige ;
       padding: 2px 5px;
       border-radius: 4px;
     }

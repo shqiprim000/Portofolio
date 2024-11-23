@@ -32,8 +32,12 @@ const scrollToElement = (section :string) :void => {
     </div>
     <div id="resume">
       <Resume></Resume>
-    </div>
+    </div> 
+  </div> 
+      <div id="contact">
+    <contact></contact>
   </div>
+
 </template>
 
 <style scoped>
@@ -47,6 +51,9 @@ const scrollToElement = (section :string) :void => {
   padding: 16px;
 
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 
   @media screen and (min-width: 1040px){
     padding: 3rem 8rem;
