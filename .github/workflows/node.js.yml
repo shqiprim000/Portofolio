@@ -18,10 +18,10 @@ jobs:
       uses: appleboy/ssh-action@v0.1.8
       with:
         host: 165.227.155.135 
-        username: root   
-        key: b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZWQyNTUxOQAAACCaftUiZLIuwJWmxrb6Tzba4hZMBee9S7c7Zt7tg1zc7wAAAJiAlQLBgJUCwQAAAAtzc2gtZWQyNTUxOQAAACCaftUiZLIuwJWmxrb6Tzba4hZMBee9S7c7Zt7tg1zc7wAAAEAaX2VfAX0DdfOiiJm3L+fdLUw+CNpe1Od+bBIhRo6ie5p+1SJksi7AlabGtvpPNtriFkwF571Ltztm3u2DXNzvAAAADnJvb3RAcG9ydGZvbGlvAQIDBAUGBw==
-        port:  22
+        username: root         
+        key: ${{ secrets.SSH_PRIVATE_KEY }}  
+        port: 22
         script: |
           cd /var/www/html/portofolio  # Replace with your project directory on the server
-             npm install               # Install dependencies (if needed)
-          npm run start         # Replace with the command to execute your script
+          npm install                  # Install dependencies (if needed)
+          npm run start                 # Start the application
