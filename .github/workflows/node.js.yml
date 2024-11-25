@@ -19,7 +19,7 @@ jobs:
       with:
         host: 165.227.155.135 
         username: root   
-        key:  b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+        key: b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
 QyNTUxOQAAACCaftUiZLIuwJWmxrb6Tzba4hZMBee9S7c7Zt7tg1zc7wAAAJiAlQLBgJUC
 wQAAAAtzc2gtZWQyNTUxOQAAACCaftUiZLIuwJWmxrb6Tzba4hZMBee9S7c7Zt7tg1zc7w
 AAAEAaX2VfAX0DdfOiiJm3L+fdLUw+CNpe1Od+bBIhRo6ie5p+1SJksi7AlabGtvpPNtri
