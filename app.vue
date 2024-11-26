@@ -2,7 +2,7 @@
   <div>
    <NuxtLayout>
      <NuxtPage>
-
+          //echo
      </NuxtPage>
    </NuxtLayout>
   </div>
