@@ -8,14 +8,14 @@ const dataStore = useDataStore();
 const about = ref<HTMLElement | null>(null);
 const home = ref<HTMLElement | null>(null);
 
-const scrollToElement = (section :string) :void => {
+const scrollToElement = (section :string) => {
 
   console.log(section)
 
-  const element = document.getElementById(section);
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth' });
-  }
+  // const element = document.getElementById(section);
+  // if (element) {
+  //   element.scrollIntoView({ behavior: 'smooth' });
+  // }
 };
 </script>
 
