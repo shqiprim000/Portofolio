@@ -17,9 +17,9 @@
 
       <div class="contact_details">
         <p><strong>Email:</strong> <a href="mailto:your.email.com">shqiprimveseli1122@gmail.com</a></p>
-        <p><strong>Phone:</strong> +123-456-7890</p>
+        <p><strong>Phone:</strong> +383-(49)-303-704</p>
         <p><strong>LinkedIn:</strong> <a href="www.linkedin.com/in/shqiprim-veseli" target="_blank">linkedin.com/in/yourprofile</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/shqiprim000" target="_blank">github.com/shqiprim000</a></p>
       </div>
     </div>
   </div>
