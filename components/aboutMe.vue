@@ -71,8 +71,8 @@
 
     span {
       font-weight: bold;
-      color: $SoftBlue;
-      background-color: $WarmBeige ;
+      color: $white-color;
+      background-color: $yellow-color ;
       padding: 2px 5px;
       border-radius: 4px;
     }
