@@ -12,10 +12,10 @@ const scrollToElement = (section :string) => {
 
   console.log(section)
 
-  // const element = document.getElementById(section);
-  // if (element) {
-  //   element.scrollIntoView({ behavior: 'smooth' });
-  // }
+  const element = document.getElementById(section);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
 };
 </script>
 
